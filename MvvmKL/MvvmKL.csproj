@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bindings\Binding.cs" />
+    <Compile Include="Bindings\BindingsCollection.cs" />
+    <Compile Include="Commands\CommandBase.cs" />
+    <Compile Include="Commands\ICommand.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +59,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\FormMainViewModel.cs" />
+    <Compile Include="ViewModels\NotifyPropertyChangedBaseObject.cs" />
+    <Compile Include="ViewModels\NotifyPropertyChangedObject.cs" />
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,7 +87,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Commands\" />
     <Folder Include="DataAccess\" />
     <Folder Include="Extensions\" />
     <Folder Include="Models\" />

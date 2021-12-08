@@ -15,6 +15,13 @@ namespace MvvmKL
         public FormMain()
         {
             InitializeComponent();
+
+            OnInitializeBinding();
+        }
+
+        protected void OnInitializeBinding()
+        {
+
         }
     }
 }
